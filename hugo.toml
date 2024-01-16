@@ -1,0 +1,4 @@
+baseURL = 'https://aorlnn.xyz/'
+languageCode = 'en-us'
+title = 'Main Page'
+theme = 'ananke'
