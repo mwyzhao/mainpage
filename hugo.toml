@@ -1,4 +1,16 @@
+title = 'aorlnn'
 baseURL = 'https://aorlnn.xyz/'
 languageCode = 'en-us'
-title = 'Main Page'
 theme = 'ananke'
+
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
+
+copyright = 'aorlnn.xyz'
+disablePathToLower = true
+enableEmoji = true
+enableGitInfo = true
+
+[params]
+background_color_class = "bg-black"
+recent_posts_number = 3
