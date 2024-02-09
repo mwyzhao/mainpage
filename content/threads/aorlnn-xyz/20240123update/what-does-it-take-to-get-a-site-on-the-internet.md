@@ -1,0 +1,30 @@
++++
+title = 'What does it take to get a site on the internet?'
+date = 2024-01-23T19:49:33-05:00
++++
+
+First project I'm going to tackle that I have been putting off for a long time is this website.
+
+I understand since there's nothing much on this site yet as of the publish date of this entry that this is definitely jumping the gun, but I wanted to see if I could set up some of the more interesting integrations for free. I personally find analytics, contact forms, comments, and donations interesting to set up right off the bat as that will allow me to really get in touch with the people that might come to the site and start getting feedback on what I'm doing.
+
+I want to mention I realize that there are way easier ways to get the benefits of what I say I want to do above without having to set up an entire site. The reason I myself is interested in this is not something that I can explain clearly. I feel like this is a semi-private space on the internet where I am free to experiement and get in contact to people. I understand that something like Twitter (now X) or Instagram (for the zoomers) might be a better and easier way to connect but I've never been a big fan of social media. This is like a very roundabout way of getting basically the exact benefits of social media while avoiding social media. I think it might be the perfect way to share some things about myself like on social media, but in a way I can control. I don't expect many people to come here so I am free to send out a link to my website to specific people without worrying that some algorithm is going to pick it up and let everyone see what's going on. That would require me to do some kind of noteworthy work which I don't expect to do.
+
+For the first update I will describe the process I used to set up the domain for this website and how I built the basic site.
+
+{{< figure src="/images/threads-aorlnn-xyz-20240123update/main-page.png" title="Website as of January 23, 2024." >}}
+
+I have some experience fiddling around with toy websites made entirely in code: usually using something like Flask or Django for the backend and manually coding HTML and CSS files to be served for the frontend. However, this time I decided to do something different. Since I only wanted to showcase some work and not create the next killer app, I knew I didn't need anything dynamic or fancy so a static site generator (SSG) would do the trick. I first heard of static site generators from a friend when he used Flask basically like a SSG and then uploaded the static site being served to him locally directly to Github so he could upload it to Github Pages. I thought that sounded cool so I coded up the previous iteration of my personal site entirely in HTML, CSS, and Javascript manually by hand and uploaded to Github Pages, which by the way has nothing to do with SSGs. I later found out that the method he was describing was like a hacked up version of using an SSG to generate his personal website. Anyway if that sounds like a ton of jargon then I'll explain the process below.
+
+So how do you get a website on the internet anyway? Below is a very, very brief description of my journey.
+
+Step 1: Picking a name
+
+Unfortunately it costs money to have a name on the internet all to yourself. I had experimented with free services in the past that provide domains for you but usually only as a subdomain. For example, you can have a WordPress blog on wordpress.com and they will give you a subdomain in the form of <your-name>.wordpress.com for the free tier. Similarly, Github will give you a <your-name>.github.io subdomain for your hosted Github Pages. However, these services usually require your site to fit some specific format that they allow to be hosted. For wordpress.com, that's a WordPress website that you can only modify through their dashboard. For Github, that's a purely static page that you need to manually create the files for and upload to Github. The only resource I know of that might be entirely free is FreeDNS. You should check that out if it sounds like that's interesting to you. For the rest of us that want a website that is entirely our own, luckily there is a ton of competition in the space with probably a million companies that will sell you a domain name for cheap. Most domain registrars as they are called, will also have some kind of plan for webhosting for a fee but I wanted to start with something cheap and simple so I didn't. I ended up going with this website name I got off NameCheap for $1.28 for the year off of a new years sale! They usually also try to push some extra features like SSL and advanced analytics but usually you can get those elsewhere for free so I declined paying for anything other than the domain name.
+
+Step 2: Hosting your site
+
+Now that you have a name for yoursite, you need to have an actually website for that name. As I mentioned I only wanted a static site, I looked around and decided to go with a static webpage host which is usually free for very basic sites. In the end I decided to go with CloudFlare pages basically on a whim, and that I've never used them before. I then decided to use Hugo as the SSG to generate my site, also basically on a whim after taking a quick look at the options available. The basic gist of using Hugo is you grab a theme (or create your own) in the specific templating frameworks provided by the SSG and it makes creating simple static sites very easy. You can then go to a service that hosts static sites for free such as CloudFlare, Github Pages, Netlify and upload all of the files to the internet and point tell them to point your domain at this new website. Follow the steps they provide for you to setup everything and you should be good to go.
+
+Step 3: That's it!
+
+I found that CloudFlare actually has the benefit of having an analytics dashboard but I'm going to integrate Google Analytics anyway just for fun. I found that there is actually a lot of traffic coming to this site as of now even though I haven't shared it with anyone. They are mostly coming from the US and Russia so most likely just a bunch of bots.

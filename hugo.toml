@@ -14,3 +14,7 @@ enableGitInfo = true
 [params]
 background_color_class = "bg-black"
 recent_posts_number = 3
+
+[services]
+[services.googleAnalytics]
+ID = 'G-TYPWLJMT9L'

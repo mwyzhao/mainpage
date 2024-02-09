@@ -1,5 +1,5 @@
 +++
 title = "Rants"
-description = "there's no rhyme or reason"
+description = "random streams of consciousness"
 menu.main.weight = 1
 +++
