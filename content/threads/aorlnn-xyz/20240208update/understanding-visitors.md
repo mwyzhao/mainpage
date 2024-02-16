@@ -9,4 +9,4 @@ I went and made a Google Analytics account to get the ID needed to pass to the J
 
 On another note, something is messed up with the formatting of this site since I envisioned the "This Website" section to be under the "Threads" section but I haven't found out the proper way to do that with my Hugo template yet. Will fix that later.
 
-{{< figure src="/images/threads-aorlnn-xyz-20240123update/main-page.png" title="I want This Website not to be on the top nav but instead somewhere on the Threads page." >}}
+{{< figure src="/images/threads-aorlnn-xyz-20240208update/this-website-not-under-threads.png" title="I want This Website not to be on the top nav but instead somewhere on the Threads page." >}}
