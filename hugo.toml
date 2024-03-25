@@ -13,7 +13,7 @@ enableGitInfo = true
 
 [params]
 background_color_class = "bg-black"
-recent_posts_number = 3
+recent_posts_number = 6
 
 [services]
 [services.googleAnalytics]
